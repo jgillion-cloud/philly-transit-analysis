@@ -7,6 +7,7 @@ This project investigates the relationship between the structural topology of Ph
 
 Methodology
 1. Network Construction
+
 Using GTFS (General Transit Feed Specification) data, we model the city’s transit system as a weighted, undirected graph:
 
 Nodes are 13,851 unique transit stops/stations.
@@ -18,6 +19,7 @@ Weights are the calculated travel time (in seconds) between nodes based on arriv
 Data Cleaning: Identified and removed "Isolated Nodes" (abandoned or duplicate "ghost stops") that lacked connecting edges to ensure accurate centrality scores. Abondoned stops are no longer part of the transit "network" 
 
 2. Connectivity Metrics
+
 We computed two primary centrality measures to define "connectivity" for each stop:
 
 Closeness Centrality: Measures the efficiency of a node by calculating the reciprocal of the average shortest path distance from station "u" to all other stations "v". It represents how "near" a station is to the rest of the city.
@@ -27,6 +29,7 @@ Betweenness Centrality: Measures the "bridge" or "hub" status of a node by findi
 We then calculated a census tract's connectivity measures, by averaging the scores from every station in the tract: we did this analysis for both betweenness centrality and closeness centrality.
 
 3. Socioeconomic Success Metrics
+
 Network metrics were aggregated by Census Tract (GEOID) and merged with data from the Opportunity Atlas and the U.S. Census Bureau. We focused on two dependent variables:
 
 kfr_pooled_pooled_p25: The mean household income at age 35 for children raised in the bottom 25th percentile of income (a standardized measure of upward mobility).
@@ -34,6 +37,7 @@ kfr_pooled_pooled_p25: The mean household income at age 35 for children raised i
 med_hhinc2016: Current median household income per tract.
 
 4. Statistical Modeling
+
 We conducted 5 tests to observe the correlation between our connectivity scores and the socioeconomic success metric scores:
 
 Test 1: A table displaying the correlation coefficient, for our socioeconomic success metrics in relation to our connectivity metrics 
