@@ -1,5 +1,6 @@
 # philly-transit-analysis
-Philadelphia Transit & Economic Mobility Analysis
+The Predictive Power of Philadelphia's Transit Network on Economic Mobility / Income
+
 Project Overview
 
 This project investigates the relationship between the structural topology of Philadelphia’s public transit network and the socioeconomic outcomes of its residents. Through modeling SEPTA transit lines via a weighted adjancey matrix, we test whether a neighborhood's "connectivity" can predict it's current household wealth (med_hhinc2016) and the long-term upward mobility of children (kfr_pooled_pooled_p25).
@@ -49,13 +50,3 @@ Language: Python
 Libraries: NetworkX (Graph Analytics), Pandas/GeoPandas (Data Wrangling), Statsmodels/Scikit-learn (Regression & ML), Pygris (Census Tract Geometry)
 
 Data Sources: SEPTA GTFS, The Opportunity Atlas, U.S. Census Bureau
-
-
-
-=====| KEY FINDINGS (repeated also on LinkedIn) |===============================================================================
-
-The Philly Paradox: Closeness Centrality is negatively correlated with wealth in Philadelphia, reflecting high transit density in historically disinvested urban cores.
-
-Quality over Quantity: Betweenness Centrality (hub status) is a significantly stronger positive predictor of current household income—2.88x more powerful than closeness.
-
-The Opportunity Signal: Transit connectivity explains 17.5% of the variance in a child’s future economic success, confirming that infrastructure remains a critical component of social mobility.
