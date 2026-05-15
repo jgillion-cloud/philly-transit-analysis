@@ -45,6 +45,7 @@ Test 3 and 4: Two seperate single-variable ordinary least squares regressions to
 Test 5: To allow for a "fair fight" comparison between units, we calculated Standardized Coefficients (β), enabling us to determine which metric had a stronger relative influence on income and upward mobility. These coefficients are also in the table. We verified our result with a ML random forest predictive model.
 
 5. Sources
+
 Tech Stack
 Language: Python
 
